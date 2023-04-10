@@ -42,30 +42,71 @@
 
 /*--------------------[ Contactos ]--------------------*/
 body {
-    background-position: center top;
+    margin: 80px;
+    /* background-position: center top;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
     background: #ddd6f3 !important;
     background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
     background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
 }
-
-.boxxx {
-    background: rgba(255, 255, 255, 0.30);
-    margin: auto;
-    margin-top: 4;
-    padding: 20;
-    color: #322203;
-    text-align: center;
-    border-radius: 15px;
-    background-color: #D9D9D9 ;
-    backdrop-filter: blur(30px);
+/* tarjeta-contato */
+.dim-contacto{
+    position:absolute;
     
 }
+.bor-contacto{
+    border-radius: 25px;
+}
+/* texto tarjeta*/
+.text-contacto{
+    backdrop-filter: blur(0px)
+}
+.parrafo {
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    margin: 50px;
+    max-width: 0 auto;
+}
 
-.imgcon {
-    width: 100%;
-    max-width: 150px;
+.text {
+    text-align: center;
+    color: white;
+    margin: 30px;
+    max-width: 0 auto;
+}
+
+.texto {
+    text-align: center;
+    color: white;
+    margin: 50px;
+    max-width: 0 auto;
+}
+
+/*----------------------- Catalogo -------------------------*/
+.glass{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(30px);
+}
+
+/* Catalogo Nav*/
+.cat-nav{
+    position:sticky;
+    margin-top: 40px;
+    height: 250px;
+}
+
+/* cartas */
+
+.dim-carta{
+    padding: 1.5rem;
+}
+
+.borde-img{
+    border-radius: 10px;
 }
 
 /*-----------------------------------------------------*/
@@ -113,31 +154,7 @@ body {
     }
 }
 
-/*----------------------- Catalogo -------------------------*/
-/* Todo */
-.glass{
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.30);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(30px);
-}
 
-/* Catalogo Nav*/
-.cat-nav{
-    position:sticky;
-    margin-top: 40px;
-    height: 250px;
-}
-
-/* cartas */
-
-.dim-carta{
-    padding: 1.5rem;
-}
-
-.borde-img{
-    border-radius: 10px;
-}
 
 /*---------------*/
 /*    Pruebas    */
