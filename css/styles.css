@@ -1,5 +1,11 @@
 /*------------------------GeneralCss------------------------ */
+.colory{
+    color:#322203
+}
 
+.margen-txt{
+    margin-top: 200px!important;
+}
 /*------------BarraNav------------*/
 .logo{
     height: 100%;
