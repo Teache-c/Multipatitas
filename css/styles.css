@@ -55,7 +55,7 @@
 
 /*--------------------[ Contactos ]--------------------*/
 .mgn-top{
-    margin-top: 40px!important;
+    margin-top: 90px!important;
 }
 body {
     background-position: center top;
@@ -66,23 +66,40 @@ body {
     background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
 }
 
-/* tarjeta-contato */
-.bor-img-con {
+/* tarjeta-contacto */
+.tam-con{
+    padding: 1.5rem;
+    align-items: center;
+    
+}
+.bor-con{
     border-radius: 25px;
 }
 
 /* texto tarjeta*/
 .dim-tittle-con {
-    color: white;
+    color: #7863bd;
     margin: 50px;
 }
 
 .dim-txt-con {
-    color: white;
-    margin-top: 50px;
+    color: #7863bd;
+    margin-top: 20px;
 
 }
-
+.cuad-txt{
+    margin: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(30px);
+    
+}
+.pd-col{
+    padding: 0rem;
+}
+.shadow-img{
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
 /*----------------------- Catalogo -------------------------*/
 .glass {
     border-radius: 10px;
