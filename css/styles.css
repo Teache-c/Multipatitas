@@ -54,8 +54,72 @@
 }
 
 /*--------------------[ Contactos ]--------------------*/
+.mgn-top {
+    margin-top: 40px !important;
+}
+
+.mgn-top-user {
+    margin-top: 80px !important;
+}
+
+body {
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    background: #ddd6f3 !important;
+    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
+    background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
+}
+
+/* tarjeta-contato */
+.bor-img-con {
+    border-radius: 25px;
+}
+
+/* texto tarjeta*/
+.dim-tittle-con {
+    color: white;
+    margin: 50px;
+}
+
+.dim-txt-con {
+    color: white;
+    margin-top: 50px;
+
+}
+
+/*----------------------- Catalogo -------------------------*/
+.glass {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(30px);
+}
+
+/* Catalogo Nav*/
+.cat-nav {
+    position: sticky;
+    margin-top: 40px;
+    height: 250px;
+}
+
+/* cartas */
+
+.dim-carta {
+    padding: 1.5rem;
+}
+
+.borde-img {
+    border-radius: 10px;
+}
+
+/*-----------------------------------------------------*/
+/*--------------------[ Contactos ]--------------------*/
 .mgn-top{
     margin-top: 90px!important;
+}
+.mgn-top-welcome{
+    margin-top: 120px;
 }
 body {
     background-position: center top;
@@ -100,32 +164,6 @@ body {
 .shadow-img{
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
-/*----------------------- Catalogo -------------------------*/
-.glass {
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.30);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(30px);
-}
-
-/* Catalogo Nav*/
-.cat-nav {
-    position: sticky;
-    margin-top: 40px;
-    height: 250px;
-}
-
-/* cartas */
-
-.dim-carta {
-    padding: 1.5rem;
-}
-
-.borde-img {
-    border-radius: 10px;
-}
-
-/*-----------------------------------------------------*/
 
 /*--------------------------- CarritoCss ---------------------------*/
 /*---------------------------[ Diseños ]---------------------------*/
@@ -222,21 +260,58 @@ body {
 
 }
 
-/* ResponsiveMedia */
-/* Carrito Media */
-@media(max-width:768px) {
-    .clean-cart {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .promo-code {
-        padding-right: 12px !important;
-    }
+/*--------------------[CuentaCss]--------------------*/
+.form-control{
+    padding-inline: 50px;
+    width: 100%;
+}
+.margen-txt{
+    width: 100%;
+    height: 400px;
+}
+.form-design{
+    text-align: center;
 }
 
+.content-design {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #EBEBEB;
+}
+.mod-btn {
+    color: #111;
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    background: #ddd6f3 !important;
+    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
+    background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
+
+
+}
+.mod-btn-2{
+    color: #111;
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    background: #ddd6f3 !important;
+    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
+    background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
+}
+
+.btns-mod {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+
+}
+
+/* ResponsiveMedia */
 /*-------------------*/
 /* NavBar */
 @media(max-width: 1166px) {
@@ -279,10 +354,49 @@ body {
         background-color: #EBEBEB;
         border-radius: 0px;
     }
+
+    .mod-btn {
+        color: #111;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 80%;
+    }
+    .mod-btn-2{
+        color: #111;
+        margin-top: 20px;
+        margin-left: 45px;
+    }
 }
+/* Carrito Media */
+@media(max-width:768px) {
+    .clean-cart {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .promo-code {
+        padding-right: 12px !important;
+    }
+    .mod-btn {
+        color: #111;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 45px;
+        width: 80%;
+    }
+    .mod-btn-2{
+        color: #111;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+}
+
 
 
 
 /*---------------*/
 /*    Pruebas    */
 /*---------------*/
+
