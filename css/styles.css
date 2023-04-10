@@ -5,6 +5,9 @@
     height: 100%;
     width: 120px;
 }
+.no-margin{
+    margin: 0%!important;
+}
 .nav-item {
     margin-inline: 56px;
     border-radius: 50px;
@@ -42,7 +45,7 @@
 
 /*--------------------[ Contactos ]--------------------*/
 body {
-    margin: 80px;
+    margin-top: 40px;
     /* background-position: center top;
     background-attachment: fixed;
     background-size: cover; */
@@ -111,7 +114,115 @@ body {
 
 /*-----------------------------------------------------*/
 
+/*--------------------------- CarritoCss ---------------------------*/
+/*---------------------------[ Diseños ]---------------------------*/
 
+.row-design {
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #EBEBEB;
+}
+
+.item-design {
+    color: #111;
+    background-color: #fdcae1;
+    border-radius: 20px;
+}
+
+.trash-design {
+    margin: 10px;
+    color: #111;
+    background-color: #fdcae1;
+    border-radius: 50px;
+    padding: 9px;
+    font-size: 20px;
+}
+
+.total-design {
+    color: #111;
+    padding: 9px;
+    border-radius: 10px;
+    background-color: #fdcae1;
+}
+
+.promo-design {
+    margin-top: 0px !important;
+    padding: 15px!important;
+    border-radius: 10px;
+    background-color: #fdcae1;
+
+}
+/*-------------------- [ Textos y imagenes ] -----------*/
+.center-txt {
+    margin-top: 40px;
+    text-align: center;
+    padding: 3px;
+}
+
+.namy {
+    justify-items: center;
+}
+
+.img-fluid {
+    border-radius: 20px;
+}
+/*-------------------- [Botones ] --------------------*/
+.clean-cart {
+    color: #111;
+    margin-top: 22px;
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fdcae1;
+}
+
+.buy-btn {
+    color: #111;
+    margin-top: 18px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ff6961;
+}
+
+.btns-style {
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.promo-code {
+    padding-right: 20px;
+}
+
+.promo-btn {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    border: none;
+    padding-inline: 30px;
+    border-radius: 10px;
+    
+}
+
+/* ResponsiveMedia */
+/* Carrito Media */
+@media(max-width:768px) {
+    .clean-cart {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .promo-code {
+        padding-right: 12px !important;
+    }
+}
+/*-------------------*/
+/* NavBar */
 @media(max-width: 1166px) {
     .nav-item {
         margin-inline: 40px;
