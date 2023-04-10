@@ -51,46 +51,30 @@
 
 /*--------------------[ Contactos ]--------------------*/
 body {
-    margin-top: 40px;
-    /* background-position: center top;
+    margin: 100px;
+    background-position: center top;
     background-attachment: fixed;
-    background-size: cover; */
+    background-size: cover;
     background: #ddd6f3 !important;
     background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
     background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
 }
+
 /* tarjeta-contato */
-.dim-contacto{
-    position:absolute;
-    
-}
-.bor-contacto{
-    border-radius: 25px;
-}
+.bor-img-con{
+  border-radius: 25px;
+} 
+
 /* texto tarjeta*/
-.text-contacto{
-    backdrop-filter: blur(0px)
-}
-.parrafo {
-    text-align: center;
-    font-size: xx-large;
+.dim-tittle-con {
     color: white;
     margin: 50px;
-    max-width: 0 auto;
 }
 
-.text {
-    text-align: center;
+.dim-txt-con {
     color: white;
-    margin: 30px;
-    max-width: 0 auto;
-}
-
-.texto {
-    text-align: center;
-    color: white;
-    margin: 50px;
-    max-width: 0 auto;
+    margin-top: 50px;
+    
 }
 
 /*----------------------- Catalogo -------------------------*/
