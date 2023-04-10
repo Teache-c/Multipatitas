@@ -135,11 +135,11 @@ button {
 .colory {
     color: #e99bac !important;
 }
+.colory-ses{
+    color: black;
+}
 
 /*------------------------- [ RecoverPassCss  ] -------------------------*/
-.pass-title{
-    
-}
 /*-----------------------------------------------------------------------*/
 /* responsive */
 @media(max-width: 1350px) {
