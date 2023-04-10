@@ -1,25 +1,29 @@
 /*------------------------GeneralCss------------------------ */
-.colory{
-    color:#322203
+.colory {
+    color: #322203
 }
 
-.margen-txt{
-    margin-top: 200px!important;
+.margen-txt {
+    margin-top: 200px !important;
 }
+
 /*------------BarraNav------------*/
-.logo{
+.logo {
     height: 100%;
     width: 120px;
 }
-.no-margin{
-    margin: 0%!important;
+
+.no-margin {
+    margin: 0% !important;
 }
+
 .nav-item {
     margin-inline: 56px;
     border-radius: 50px;
-    
+
 }
-.nav-link{
+
+.nav-link {
     color: #322203 !important;
     font-size: 16px;
 }
@@ -50,8 +54,10 @@
 }
 
 /*--------------------[ Contactos ]--------------------*/
+.mgn-top{
+    margin-top: 40px!important;
+}
 body {
-    margin: 100px;
     background-position: center top;
     background-attachment: fixed;
     background-size: cover;
@@ -61,9 +67,9 @@ body {
 }
 
 /* tarjeta-contato */
-.bor-img-con{
-  border-radius: 25px;
-} 
+.bor-img-con {
+    border-radius: 25px;
+}
 
 /* texto tarjeta*/
 .dim-tittle-con {
@@ -74,11 +80,11 @@ body {
 .dim-txt-con {
     color: white;
     margin-top: 50px;
-    
+
 }
 
 /*----------------------- Catalogo -------------------------*/
-.glass{
+.glass {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.30);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -86,19 +92,19 @@ body {
 }
 
 /* Catalogo Nav*/
-.cat-nav{
-    position:sticky;
+.cat-nav {
+    position: sticky;
     margin-top: 40px;
     height: 250px;
 }
 
 /* cartas */
 
-.dim-carta{
+.dim-carta {
     padding: 1.5rem;
 }
 
-.borde-img{
+.borde-img {
     border-radius: 10px;
 }
 
@@ -138,11 +144,12 @@ body {
 
 .promo-design {
     margin-top: 0px !important;
-    padding: 15px!important;
+    padding: 15px !important;
     border-radius: 10px;
     background-color: #fdcae1;
 
 }
+
 /*-------------------- [ Textos y imagenes ] -----------*/
 .center-txt {
     margin-top: 40px;
@@ -157,6 +164,7 @@ body {
 .img-fluid {
     border-radius: 20px;
 }
+
 /*-------------------- [Botones ] --------------------*/
 .clean-cart {
     color: #111;
@@ -194,7 +202,7 @@ body {
     border: none;
     padding-inline: 30px;
     border-radius: 10px;
-    
+
 }
 
 /* ResponsiveMedia */
@@ -211,6 +219,7 @@ body {
         padding-right: 12px !important;
     }
 }
+
 /*-------------------*/
 /* NavBar */
 @media(max-width: 1166px) {
