@@ -2,99 +2,104 @@
 <html lang="en">
 
 <head>
-    <!--MetaTags-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--BoosTrapCss-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--HojaCss-->
-    <link type="text/css" rel="stylesheet" href="/css/styles.css">
-    <title>Modificar Perfil</title>
+  <!--MetaTags-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--BoosTrapCss-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--HojaCss-->
+  <link type="text/css" rel="stylesheet" href="/css/styles.css">
+  <title>Modificar Perfil</title>
 </head>
 
 <body>
-    <!--------------------Barra De Navegación-------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark navsty fixed-top">
-        <div class="container-fluid">
-            <!--Titulo de la Barra-->
-            <a class="navbar-brand colory" href="/index.html">
-                <img class="logo" src="/img/logoMP.png" alt="Just No...">
+  <!--------------------Barra De Navegación-------------------->
+  <nav class="navbar navbar-expand-lg navbar-dark navsty fixed-top">
+    <div class="container-fluid">
+      <!--Titulo de la Barra-->
+      <a class="navbar-brand colory" href="/index.html">
+        <img class="logo" src="/img/logoMP.png" alt="Just No...">
+      </a>
+      <!--Boton de menu para dispositivos celulares o tablet-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Menu de navegacion-->
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav mx-auto ">
+          <li class="nav-item">
+            <a class="nav-link " href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/pgs/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/pgs/contactos.html">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/pgs/carrito.html">Carrito</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Mi Cuenta
             </a>
-            <!--Boton de menu para dispositivos celulares o tablet-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--Menu de navegacion-->
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav mx-auto ">
-                    <li class="nav-item">
-                        <a class="nav-link " href="/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/pgs/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/pgs/contactos.html">Contactos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/pgs/carrito.html">Carrito</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Mi Cuenta
-                        </a>
-                        <ul class="dropdown-menu navsty">
-                            <li>
-                                <a class="dropdown-item" href="/index.html">Cerrar
-                                    Sesión</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!----------------------------------------------------------->
-    <div class="container-xl mgn-top-user">
-        <div class="row content-design">
-            <div class="col-sm-12 col-md-4 col-lg-4 col-lg-4">
-                <div class="user-img">
-                    <img class="img-fluid shadow" src="/img/imginicio4.jpg" alt="Just No...">
-                    <div class="mod-btn">
-                        <button class="btns-mod" type="submit">Cambiar Imagen</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-8 col-lg-8 col-lg-8 ">
-                <form class="form-design">
-                    <div class="my-0">
-                        <label for="inputUser" class="form-label"><small>NickName</small></label>
-                        <input type="email" class="form-control" id="inputUser" aria-describedby="InputHelp">
-                    </div>
-                    <div class="my-2">
-                        <label for="textComent" class="form-label"><small>Correo</small></label>
-                        <input type="email" class="form-control" id="inputUser" aria-describedby="InputHelp">
-                    </div>
-                    <div class="my-2">
-                        <label for="inputUser" class="form-label"><small>Dirección</small></label>
-                        <input type="email" class="form-control" id="inputUser" aria-describedby="InputHelp">
-                    </div>
-                    <div class="my-2">
-                        <label for="textComent" class="form-label"><small>Numero de Telefono</small></label>
-                        <input type="email" class="form-control" id="inputUser" aria-describedby="InputHelp">
-                    </div>
-                </form>
-                <div class="mod-btn-2">
-                    <a href="/pgs/session/cuenta.html" class="btns-mod btn active" type="submit"> Modificar Perfil </a>
-                </div>
-
-            </div>
-        </div>
+            <ul class="dropdown-menu navsty">
+              <li>
+                <a class="dropdown-item" href="/index.html">Cerrar
+                  Sesión</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!--BootStrap Js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!---------------->
+  </nav>
+  <!----------------------------------------------------------->
+  <div class="container-xl mgn-top-user">
+    <div class="row content-design">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-lg-4">
+        <div class="user-img">
+          <img class="img-fluid shadow" src="/img/imginicio4.jpg" alt="Just No...">
+          <div class="mod-btn">
+            <button class="btns-mod" type="submit">Cambiar Imagen</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-8 col-lg-8 col-lg-8 ">
+        <form class="form-design">
+          <div class="my-0">
+            <label for="inputUser" class="form-label"><small>NickName</small></label>
+            <input type="email" class="form-control" id="inputUser" aria-describedby="InputHelp">
+          </div>
+          <div class="my-2">
+            <label for="textComent" class="form-label"><small>Correo</small></label>
+            <input type="email" class="form-control" id="inputUser" aria-describedby="InputHelp">
+          </div>
+          <div class="my-2">
+            <label for="inputUser" class="form-label"><small>Dirección</small></label>
+            <input type="email" class="form-control" id="inputUser" aria-describedby="InputHelp">
+          </div>
+          <div class="my-2">
+            <label for="textComent" class="form-label"><small>Numero de Telefono</small></label>
+            <input type="email" class="form-control" id="inputUser" aria-describedby="InputHelp">
+          </div>
+        </form>
+        <div class="mod-btn-2">
+          <a href="/pgs/session/cuenta.html" class="btns-mod btn active" type="submit"> Modificar Perfil </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer class="py-3">
+    <div class="border-bottom pb-1 my-1 mb-3">
+    </div>
+    <p class="text-center text-muted">@TheMalveks © 2023</p>
+  </footer>
+  <!--BootStrap Js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!---------------->
 </body>
 
 </html>

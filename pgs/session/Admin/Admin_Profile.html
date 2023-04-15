@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--HojaCss-->
     <link type="text/css" rel="stylesheet" href="/css/styles.css">
-    <title>Mi Cuenta</title>
+    <title>Administracion</title>
 </head>
 
 <body>
@@ -56,41 +56,57 @@
         </div>
     </nav>
     <!----------------------------------------------------------->
-    <div class="container-xl mgn-top-user">
-        <div class="row content-design">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-lg-6">
-                <img class="img-fluid shadow" src="/img/imginicio4.jpg" alt="Just No...">
+    <div class="container-xxl mgn-top ">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3 col-xl-3 col-xxl-3 admy">
+                <div class="img-profile my-3">
+                    <img class="img-fluid shadow" src="/img/imginicio4.jpg" alt="Just No...">
+                </div>
+                <div class="admin-options">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="my-4">
+                            <a class="nav-link" href="#">Agregar Productos</a>
+                        </li>
+                        <li class="my-4">
+                            <a class="nav-link" href="#">Modificar Productos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-lg-6 my-1">
-                <div class="user-info">
-                    <small>Nickname</small>
-                    <h4>User#111000</h4>
+            <div class="col-sm-12 col-lg-3 col-xl-3 col-xxl-3 navsty">
+                <div class="add-items my-3">
+                    <small>Imagen Del producto</small>
                 </div>
-                <div class="user-info">
-                    <small>Correo</small>
-                    <h4>EmailExample@email.com</h4>
+                <div class="item-img">
+                    <img class="img-fluid" src="/img/add-g5bf85b14e_1280.png" width="250px" height="250px"
+                        alt="Just No..">
                 </div>
-                <div class="user-info">
-                    <small>Dirección</small>
-                    <h4>Region, Comuna, Calle#2200</h4>
-                </div>
-                <div class="user-info">
-                    <small>Numero de Delefono</small>
-                    <h4>+569 1234 5678</h4>
-                </div>
-                <div class="user-info">
-                    <small>Fecha de Nacimiento</small>
-                    <h4>dd/mm/yyyy</h4>
-                </div>
-                <div class="mod-btn my-4">
-                    <a href="/pgs/session/mod-cuenta.html" class="btns-mod btn active" type="submit"> Modificar Perfil
-                    </a>
-                </div>
-                <div class="mod-btn my-4">
-                    <a href="/pgs/session/Admin/Admin_Profile.html" class="btns-mod btn active" type="submit"> Administrar negocio
-                    </a>
+                <div class="type-tem">
+                    <small>Categoria</small>
+                    <a href="#!" class="nav-link text-muted border-bottom my-3 active">Todo</a></li>
+                    <a href="#!" class="nav-link text-muted border-bottom my-3 active">Accesorios</a></li>
+                    <a href="#!" class="nav-link text-muted border-bottom my-3 active">Juguetes</a></li>
+                    <a href="#!" class="nav-link text-muted border-bottom my-3 active">Hogar</a></li>
                 </div>
 
+            </div>
+            <div class="col-sm-12 col-lg-6 col-xl-6 col-xxl-6 navsty">
+                <div class="add-item my-5">
+                    <small>Nombre Del producto</small>
+                    <p>Producto#111000</p>
+                </div>
+                <div class="add-item my-5">
+
+                    <div class="my-4">
+                        <label for="textComent" class="form-label">
+                            <small>Breve descripcion del producto</small>
+                        </label>
+                        <textarea class="form-control" id="textComent" cols="30" rows="7"></textarea>
+                    </div>
+                </div>
+                <div class="add-item my-5">
+                    <small>Cantidad</small>
+                </div>
             </div>
         </div>
     </div>

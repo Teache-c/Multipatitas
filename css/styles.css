@@ -1,10 +1,13 @@
 /*------------------------GeneralCss------------------------ */
 .colory {
-    color: #322203
+    color: #322203;
 }
 
 .margen-txt {
     margin-top: 200px !important;
+}
+.admy{
+    background-color: #d2bead;
 }
 
 /*------------BarraNav------------*/
@@ -61,7 +64,9 @@
 .mgn-top-user {
     margin-top: 80px !important;
 }
-
+.form-label{
+    resize: none;
+}
 body {
     background-position: center top;
     background-attachment: fixed;
