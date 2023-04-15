@@ -9,6 +9,9 @@
 .admy{
     background-color: #d2bead;
 }
+.other-color{
+    background-color: #D9D9D9;
+}
 
 /*------------BarraNav------------*/
 .logo {
@@ -280,9 +283,24 @@ body {
 }
 
 /*--------------------[CuentaCss]--------------------*/
+.centy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bi{
+    font-size: 15px;
+}
 .form-control{
-    padding-inline: 50px;
+    padding-inline: 20px;
     width: 100%;
+    resize: none;
+}
+.input-design{
+    padding-inline: 20px;
+    width: 40%;
+    resize: none;
 }
 .margen-txt{
     width: 100%;
@@ -297,6 +315,11 @@ body {
     border-radius: 20px;
     background-color: #EBEBEB;
 }
+.btn-count{
+    border: none;
+    margin-inline: 10px !important;
+    background: transparent;
+}
 .mod-btn {
     color: #111;
     margin-top: 20px;
@@ -307,8 +330,6 @@ body {
     background: #ddd6f3 !important;
     background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
     background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
-
-
 }
 .mod-btn-2{
     color: #111;
@@ -388,6 +409,7 @@ body {
 }
 /* Carrito Media */
 @media(max-width:768px) {
+    
     .clean-cart {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -420,5 +442,6 @@ body {
 
 /*---------------*/
 /*    Pruebas    */
+
 /*---------------*/
 
