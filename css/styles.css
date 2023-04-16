@@ -6,10 +6,12 @@
 .margen-txt {
     margin-top: 200px !important;
 }
-.admy{
+
+.admy {
     background-color: #d2bead;
 }
-.other-color{
+
+.other-color {
     background-color: #D9D9D9;
 }
 
@@ -58,7 +60,8 @@
     height: 110vh;
 
 }
-.imagy{
+
+.imagy {
     width: 80%;
     height: 200px;
     border-radius: 20px;
@@ -72,9 +75,11 @@
 .mgn-top-user {
     margin-top: 80px !important;
 }
-.form-label{
+
+.form-label {
     resize: none;
 }
+
 body {
     background-position: center top;
     background-attachment: fixed;
@@ -100,6 +105,7 @@ body {
     margin-top: 50px;
 
 }
+
 .con-fx:hover {
     border: 5px solid rgba(255, 255, 255, 0.733);
     transition: .1s ease;
@@ -127,7 +133,7 @@ body {
     padding: 1.5rem;
 }
 
-.fon-card{
+.fon-card {
     background: #EBEBEB;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(30px);
@@ -137,12 +143,14 @@ body {
 
 /*-----------------------------------------------------*/
 /*--------------------[ Contactos ]--------------------*/
-.mgn-top{
-    margin-top: 90px!important;
+.mgn-top {
+    margin-top: 90px !important;
 }
-.mgn-top-welcome{
+
+.mgn-top-welcome {
     margin-top: 120px;
 }
+
 body {
     background-position: center top;
     background-attachment: fixed;
@@ -153,12 +161,21 @@ body {
 }
 
 /* tarjeta-contacto */
-.tam-con{
+
+
+.tam-map {
+    border-radius: 20px;
+    width: 1115px;
+    height: 200px;
+}
+
+.tam-con {
     padding: 1.5rem;
     align-items: center;
-    
+
 }
-.bor-con{
+
+.bor-con {
     border-radius: 25px;
 }
 
@@ -173,17 +190,19 @@ body {
     margin-top: 20px;
 
 }
-.cuad-txt{
-    margin: 20px;
+
+.cuad-txt {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.30);
     backdrop-filter: blur(30px);
-    
+
 }
-.pd-col{
+
+.pd-col {
     padding: 0rem;
 }
-.shadow-img{
+
+.shadow-img {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
@@ -283,30 +302,35 @@ body {
 }
 
 /*--------------------[CuentaCss]--------------------*/
-.centy{
+.centy {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.bi{
+
+.bi {
     font-size: 15px;
 }
-.form-control{
+
+.form-control {
     padding-inline: 20px;
     width: 100%;
     resize: none;
 }
-.input-design{
+
+.input-design {
     padding-inline: 20px;
     width: 40%;
     resize: none;
 }
-.margen-txt{
+
+.margen-txt {
     width: 100%;
     height: 400px;
 }
-.form-design{
+
+.form-design {
     text-align: center;
 }
 
@@ -315,11 +339,13 @@ body {
     border-radius: 20px;
     background-color: #EBEBEB;
 }
-.btn-count{
+
+.btn-count {
     border: none;
     margin-inline: 10px !important;
     background: transparent;
 }
+
 .mod-btn {
     color: #111;
     margin-top: 20px;
@@ -331,7 +357,8 @@ body {
     background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
     background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
 }
-.mod-btn-2{
+
+.mod-btn-2 {
     color: #111;
     margin-top: 20px;
     margin-left: 70px;
@@ -367,7 +394,15 @@ body {
     .dropdown-menu.show {
         margin-left: 6px;
     }
+
+    .tam-map {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    
 }
+
 
 @media(max-width: 991px) {
     .nav-item {
@@ -395,34 +430,41 @@ body {
         border-radius: 0px;
     }
 
+    
+
     .mod-btn {
         color: #111;
         margin-top: 20px;
         margin-left: 20px;
         width: 80%;
     }
-    .mod-btn-2{
+
+    .mod-btn-2 {
         color: #111;
         margin-top: 20px;
         margin-left: 45px;
     }
 }
+
 /* Carrito Media */
 @media(max-width:768px) {
-    
+
     .clean-cart {
         margin-top: 30px;
         margin-bottom: 30px;
         width: 100%;
         text-align: center;
     }
-    .imagy{
+
+    .imagy {
         width: 100%;
         height: auto;
     }
+
     .promo-code {
         padding-right: 12px !important;
     }
+
     .mod-btn {
         color: #111;
         margin-top: 20px;
@@ -430,7 +472,8 @@ body {
         margin-left: 45px;
         width: 80%;
     }
-    .mod-btn-2{
+
+    .mod-btn-2 {
         color: #111;
         margin-top: 20px;
         margin-left: 50px;
@@ -444,4 +487,3 @@ body {
 /*    Pruebas    */
 
 /*---------------*/
-
