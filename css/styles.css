@@ -67,19 +67,8 @@
     border-radius: 20px;
 }
 
-/*--------------------[ Contactos ]--------------------*/
-.mgn-top {
-    margin-top: 40px !important;
-}
-
-.mgn-top-user {
-    margin-top: 80px !important;
-}
-
-.form-label {
-    resize: none;
-}
-
+/*-----------------------------------------------------------------*/
+/*---------------------------[ Producto ]---------------------------*/
 body {
     background-position: center top;
     background-attachment: fixed;
@@ -88,31 +77,37 @@ body {
     background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
     background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
 }
+.color-card-pro {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(30px);
 
-/* tarjeta-contato */
+}
+.mgn-top {
+    margin-top: 40px !important;
+}
+
+/* Imagen-producto */
 .bor-img-con {
     border-radius: 25px;
 }
 
-/* texto tarjeta*/
-.dim-tittle-con {
-    color: white;
-    margin: 50px;
+/* texto-tarjeta*/
+.tam-txt-pro {
+    padding: 1.5rem;
+    align-items: center;
 }
 
-.dim-txt-con {
-    color: white;
-    margin-top: 50px;
-
-}
-
-.con-fx:hover {
+/* Boton-producto */
+.fx-botom-pro:hover {
     border: 5px solid rgba(255, 255, 255, 0.733);
     transition: .1s ease;
     opacity: .90;
 }
 
-/*----------------------- Catalogo -------------------------*/
+
+/*-----------------------------------------------------*/
+/*--------------------[ Catalogo ]--------------------*/
 .glass {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.30);
@@ -161,8 +156,6 @@ body {
 }
 
 /* tarjeta-contacto */
-
-
 .tam-map {
     border-radius: 20px;
     width: 1115px;
@@ -172,7 +165,6 @@ body {
 .tam-con {
     padding: 1.5rem;
     align-items: center;
-
 }
 
 .bor-con {
@@ -205,6 +197,8 @@ body {
 .shadow-img {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
+
+
 
 /*--------------------------- CarritoCss ---------------------------*/
 /*---------------------------[ Diseños ]---------------------------*/
