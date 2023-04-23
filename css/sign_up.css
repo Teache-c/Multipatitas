@@ -12,7 +12,24 @@ body {
 
 
 }
+/* BotonesCss */
+.login-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.longi {
+    width: 400px;
+}
+
+.longi:hover {
+    color: white;
+    background: #e99bac;
+    background: -webkit-linear-gradient(to right, #fc67fa, #e99bac);
+    background: linear-gradient(to right, #e99bac, #e99bac); 
+}
 /* Formulario_Css */
 /* Conteiner en el cual esta toda la informacion del Form */
 .container {
@@ -57,7 +74,7 @@ body {
 
 .imgy {
     width: 100% !important;
-     height: 600px;
+    height: 600px;
 }
 
 .login-form {
@@ -140,6 +157,11 @@ button {
 }
 
 /* responsive */
+@media(min-width: 1400px) {
+    .imgy{
+        height: 700px !important;
+    }
+}
 @media(max-width: 1350px) {
     .login-right {
         padding: 50px !important;
@@ -158,7 +180,11 @@ button {
         height: 700px !important;
     } 
 }
-
+@media(max-width: 992px){
+    .longi {
+        width: 300px;
+    }
+}
 
 @media(max-width: 768px) {
     body {

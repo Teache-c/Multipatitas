@@ -70,7 +70,6 @@
 /*-----------------------------------------------------------------*/
 /*---------------------------[ Producto ]---------------------------*/
 body {
-    background-position: center top;
     background-attachment: fixed;
     background-size: cover;
     background: #ddd6f3 !important;
@@ -146,8 +145,11 @@ body {
     margin-top: 120px;
 }
 
+.mgn-top-user {
+    margin-top: 90px !important;
+}
+
 body {
-    background-position: center top;
     background-attachment: fixed;
     background-size: cover;
     background: #ddd6f3 !important;
