@@ -8,7 +8,7 @@ Nomenclaturas(Variables, Expresiones CSS etc...)
 ---- Expresiones CSS ----
 -Navsty: Color de fondo de la barra de navegacion(navbar)
 -Colory: Color que se aplica solo a los textos que deseemos
--Imgy: parametros de imagen de fondo()
+-Imgy: parametros de imagen de fondo
 
 
 ---- Pendientes ----
