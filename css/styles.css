@@ -85,13 +85,6 @@
 
 /*-----------------------------------------------------------------*/
 /*---------------------------[ Producto ]---------------------------*/
-body {
-    background-attachment: fixed;
-    background-size: cover;
-    background: #ddd6f3 !important;
-    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
-    background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
-}
 .color-card-pro {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.30);
@@ -109,14 +102,6 @@ body {
     padding: 1.5rem;
     align-items: center;
 }
-
-/* Boton-producto */
-.fx-botom-pro:hover {
-    border: 5px solid rgba(255, 255, 255, 0.733);
-    transition: .1s ease;
-    opacity: .90;
-}
-
 
 /*-----------------------------------------------------*/
 /*--------------------[ Catalogo ]--------------------*/
