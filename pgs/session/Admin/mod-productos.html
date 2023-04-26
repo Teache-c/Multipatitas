@@ -6,6 +6,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FuenteImport -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
   <!--BoosTrapCss-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
@@ -63,8 +67,8 @@
         <div class="img-profile my-3">
           <img class="img-fluid shadow " src="/img/imginicio4.jpg" alt="Just No...">
         </div>
-        <div id="user-name">
-          <h5>UserName#111000</h2>
+        <div>
+          <h5 id="user-name">UserName#111000</h5>
         </div>
         <div class="admin-options admin-menu ">
           <ul class="navbar-nav">
@@ -94,19 +98,19 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Casa Madera</h6>
+                    <h6 id="item-name">Casa Madera</h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                   <!-- Boton Eliminar Articulo -->
-                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                  <button type="button" class="trash-design" id="trash-btn"><i class="bi bi-trash "></i></button>
                 </div>
               </div>
               <div class="row px-3 pb-3">
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/casaperro1.jpg" alt="Just No...">
+                    <img class="img-fluid shadow" id="item-image" src="/img/img_productos/casaperro1.jpg" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
@@ -114,7 +118,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputValue"
                         aria-describedby="InputHelp" placeholder="$39.990">
                     </div>
                   </div>
@@ -124,7 +128,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputStock"
                         aria-describedby="InputHelp" placeholder="11">
                     </div>
                   </div>
@@ -134,12 +138,12 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputDiscount"
                         aria-describedby="InputHelp" placeholder="0%">
                     </div>
                   </div>
                   <div class="aply-btn centy">
-                    <button type="button" class="btn btn-outline-dark">Aplicar Cambios</button>
+                    <button type="button" class="btn btn-outline-dark" id="change-btn">Aplicar Cambios</button>
                   </div>
                 </div>
               </div>
@@ -152,19 +156,19 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Caja De Arena</h6>
+                    <h6 id="item-name">Caja De Arena</h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                   <!-- Boton Eliminar Articulo -->
-                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                  <button type="button" class="trash-design" id="trash-btn"><i class="bi bi-trash "></i></button>
                 </div>
               </div>
               <div class="row px-3 pb-3">
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/arenagato1.jpg" alt="Just No...">
+                    <img class="img-fluid shadow" id="item-image" src="/img/img_productos/arenagato1.jpg" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
@@ -172,7 +176,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputValue"
                         aria-describedby="InputHelp" placeholder="$14.990">
                     </div>
                   </div>
@@ -182,7 +186,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputStock"
                         aria-describedby="InputHelp" placeholder="20">
                     </div>
                   </div>
@@ -192,7 +196,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputDiscount"
                         aria-describedby="InputHelp" placeholder="0%">
                     </div>
                   </div>
@@ -209,19 +213,19 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Bola Hamsters</i> </h6>
+                    <h6 id="item-name">Bola Hamsters</h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                   <!-- Boton Eliminar Articulo -->
-                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                  <button type="button" class="trash-design" id="trash-btn"><i class="bi bi-trash "></i></button>
                 </div>
               </div>
               <div class="row px-3 pb-3">
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/bola-hammmmmmmm.webp" alt="Just No...">
+                    <img class="img-fluid shadow" id="item-image" src="/img/img_productos/bola-hammmmmmmm.webp" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
@@ -229,7 +233,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputValue"
                         aria-describedby="InputHelp" placeholder="$7.990">
                     </div>
                   </div>
@@ -239,7 +243,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputStock"
                         aria-describedby="InputHelp" placeholder="25">
                     </div>
                   </div>
@@ -249,7 +253,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputDiscount"
                         aria-describedby="InputHelp" placeholder="0%">
                     </div>
                   </div>
@@ -266,19 +270,19 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Pollo Loco </h6>
+                    <h6 id="item-name">Pollo Loco </h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                   <!-- Boton Eliminar Articulo -->
-                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                  <button type="button" class="trash-design" id="trash-btn"><i class="bi bi-trash "></i></button>
                 </div>
               </div>
               <div class="row px-3 pb-3">
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/polloperro1.jpg" alt="Just No...">
+                    <img class="img-fluid shadow" id="item-image" src="/img/img_productos/polloperro1.jpg" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
@@ -286,7 +290,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputValue"
                         aria-describedby="InputHelp" placeholder="$3.500">
                     </div>
                   </div>
@@ -296,7 +300,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputStock"
                         aria-describedby="InputHelp" placeholder="38">
                     </div>
                   </div>
@@ -306,7 +310,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputDiscount"
                         aria-describedby="InputHelp" placeholder="0%">
                     </div>
                   </div>
@@ -323,19 +327,19 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Cordel Interactivo para Gato</h6>
+                    <h6 id="item-name">Cordel Interactivo para Gato</h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                   <!-- Boton Eliminar Articulo -->
-                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                  <button type="button" class="trash-design" id="trash-btn"><i class="bi bi-trash "></i></button>
                 </div>
               </div>
               <div class="row px-3 pb-3">
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/jugueteraro1.jpg" alt="Just No...">
+                    <img class="img-fluid shadow" id="item-image" src="/img/img_productos/jugueteraro1.jpg" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
@@ -343,7 +347,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputValue"
                         aria-describedby="InputHelp" placeholder="$9.990">
                     </div>
                   </div>
@@ -353,7 +357,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputStock"
                         aria-describedby="InputHelp" placeholder="6">
                     </div>
                   </div>
@@ -363,7 +367,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputDiscount"
                         aria-describedby="InputHelp" placeholder="0%">
                     </div>
                   </div>
@@ -380,19 +384,19 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Correa Gatos</i> </h6>
+                    <h6 id="item-name">Correa Gatos</h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                   <!-- Boton Eliminar Articulo -->
-                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                  <button type="button" class="trash-design" id="trash-btn"><i class="bi bi-trash "></i></button>
                 </div>
               </div>
               <div class="row px-3 pb-3">
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/gato_correa.jpg" alt="Just No...">
+                    <img class="img-fluid shadow" id="item-image" src="/img/img_productos/gato_correa.jpg" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
@@ -400,7 +404,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputValue"
                         aria-describedby="InputHelp" placeholder="$14.990">
                     </div>
                   </div>
@@ -410,7 +414,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputStock"
                         aria-describedby="InputHelp" placeholder="34">
                     </div>
                   </div>
@@ -420,7 +424,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputDiscount"
                         aria-describedby="InputHelp" placeholder="25%">
                     </div>
                   </div>
@@ -437,19 +441,19 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Rascador</h6>
+                    <h6 id="item-name">Rascador</h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                   <!-- Boton Eliminar Articulo -->
-                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                  <button type="button" class="trash-design" id="trash-btn"><i class="bi bi-trash "></i></button>
                 </div>
               </div>
               <div class="row px-3 pb-3">
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/rascadorgato1.jpg" alt="Just No...">
+                    <img class="img-fluid shadow" id="item-image" src="/img/img_productos/rascadorgato1.jpg" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
@@ -467,7 +471,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputStock"
                         aria-describedby="InputHelp" placeholder="12">
                     </div>
                   </div>
@@ -477,7 +481,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputDiscount"
                         aria-describedby="InputHelp" placeholder="0%">
                     </div>
                   </div>
@@ -494,19 +498,19 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Correa perro</i> </h6>
+                    <h6 id="item-name">Correa perro </h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                   <!-- Boton Eliminar Articulo -->
-                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                  <button type="button" class="trash-design" id="trash-btn"><i class="bi bi-trash "></i></button>
                 </div>
               </div>
               <div class="row px-3 pb-3">
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/correaperro1.jpg" alt="Just No...">
+                    <img class="img-fluid shadow" id="item-image" src="/img/img_productos/correaperro1.jpg" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
@@ -524,7 +528,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputStock"
                         aria-describedby="InputHelp" placeholder="21">
                     </div>
                   </div>
@@ -534,7 +538,7 @@
                   <div class="centy my-4 item-design">
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
-                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                      <input type="text" class="form-control text-center input-design-mod" id="inputDiscount"
                         aria-describedby="InputHelp" placeholder="0%">
                     </div>
                   </div>

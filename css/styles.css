@@ -1,4 +1,7 @@
 /*------------------------GeneralCss------------------------ */
+*{
+    font-family: 'Comfortaa', cursive;
+}
 .colory {
     color: #322203;
 }
