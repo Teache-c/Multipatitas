@@ -135,8 +135,6 @@
 
 /*-----------------------------------------------------*/
 /*--------------------[ Contactos ]--------------------*/
-
-
 body {
     background-attachment: fixed;
     background-size: cover;
@@ -146,51 +144,30 @@ body {
 }
 
 /* tarjeta-contacto */
-.tam-map {
+.dim-map {
     border-radius: 20px;
-    width: 1115px;
-    height: 200px;
+    width: 1500px;
+    height: 400px;
 }
-
 .tam-con {
     padding: 1.5rem;
     align-items: center;
 }
 
-.bor-con {
-    border-radius: 25px;
-}
-
 /* texto tarjeta*/
 .dim-tittle-con {
-    color: #7863bd;
     margin: 50px;
 }
-
 .dim-txt-con {
-    color: #7863bd;
-    margin-top: 20px;
+    padding: 10px;
 
 }
-
-.cuad-txt {
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.30);
-    backdrop-filter: blur(30px);
-
-}
-
+/* Dimension imagen */
 .dim-img-con{
     width: 100%;
     height: 320px;
     border-radius: 20px;
-    
 } 
-
-
-
-
-
 
 /*--------------------------- CarritoCss ---------------------------*/
 /*---------------------------[ Diseños ]---------------------------*/
