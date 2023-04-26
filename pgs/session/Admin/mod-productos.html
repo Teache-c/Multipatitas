@@ -59,21 +59,24 @@
   <!----------------------------------------------------------->
   <div class="container-fluid mgn-top-admin">
     <div class="row">
-      <div class="col-sm-6 col-lg-3 col-xl-3 col-xxl-3 admy shadow">
+      <div class="col-sm-6 col-lg-3 col-xl-3 col-xxl-3 admy shadow ">
         <div class="img-profile my-3">
-          <img class="img-fluid shadow" src="/img/imginicio4.jpg" alt="Just No...">
+          <img class="img-fluid shadow " src="/img/imginicio4.jpg" alt="Just No...">
         </div>
-        <div class="admin-options">
+        <div id="user-name">
+          <h5>UserName#111000</h2>
+        </div>
+        <div class="admin-options admin-menu ">
           <ul class="navbar-nav">
-            <li class="my-4">
+            <li class="my-3">
               <a class="nav-link" href="/pgs/session/Admin/Admin_Profile.html"><i class="bi bi-bag-plus">
                   Agregar Productos</i> </a>
             </li>
-            <li class="my-4">
+            <li class="my-3">
               <a class="nav-link" href="/pgs/session/Admin/mod-productos.html"><i class="bi bi-box-seam">
                   Modificar Productos</i></a>
             </li>
-            <li class="my-4">
+            <li class="my-3">
               <a class="nav-link" href="/pgs/session/Cuenta.html"><i class="bi bi-arrow-left-circle">
                   Volver</i> </a>
             </li>
@@ -82,7 +85,7 @@
       </div>
       <div class="col-sm-6 col-lg-9 col-xl-9 col-xxl-9 navsty shadow">
         <div class="row shadow">
-          <!-- Columna de Prosductos -->
+          <!-- Columna de Productos -->
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <!-- Producto 1 -->
             <div class="card card-design my-3">
@@ -91,43 +94,52 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Bola Hamsters</i> </h6>
+                    <h6>Casa Madera</h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
                   <!-- Boton Eliminar Articulo -->
-                  <button type="button" class="trash-design"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
                 </div>
               </div>
               <div class="row px-3 pb-3">
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/bola-hammmmmmmm.webp" alt="Just No...">
+                    <img class="img-fluid shadow" src="/img/img_productos/casaperro1.jpg" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
                 <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
-                  <div class="centy item-design">
-                    <small>Valor</small>
-                    <p class="namy my-3">$7.990</p>
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="$39.990">
+                    </div>
                   </div>
                 </div>
-                <!-- Cantidad Del Producto -->
                 <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
-                  <div class="centy item-design">
-                    <small>Cantidad</small>
-                    <div class="my-3">
-                      <button type="button" class="btn-count">-</button>2<button type="button"
-                        class="btn-count">+</button>
+                  <!-- Cantidad Del Producto -->
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="11">
                     </div>
                   </div>
                 </div>
                 <!-- Valor Subtotal del Producto -->
                 <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
-                  <div class="centy item-design">
-                    <small>Subtotal</small>
-                    <p class="namy my-3">$15.980</p>
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="0%">
+                    </div>
+                  </div>
+                  <div class="aply-btn centy">
+                    <button type="button" class="btn btn-outline-dark">Aplicar Cambios</button>
                   </div>
                 </div>
               </div>
@@ -140,7 +152,7 @@
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2">
                     <small>Producto</small>
-                    <h6>Correa Gatos</i> </h6>
+                    <h6>Caja De Arena</h6>
                   </div>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
@@ -152,7 +164,7 @@
                 <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                   <!-- Imagen del Producto -->
                   <div class="img-product mt-3">
-                    <img class="img-fluid shadow" src="/img/img_productos/gato_correa.jpg" alt="Just No...">
+                    <img class="img-fluid shadow" src="/img/img_productos/arenagato1.jpg" alt="Just No...">
                   </div>
                 </div>
                 <!-- Valor del Producto -->
@@ -171,7 +183,7 @@
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
                       <input type="text" class="form-control text-center input-design-mod" id="inputUser"
-                        aria-describedby="InputHelp" placeholder="34">
+                        aria-describedby="InputHelp" placeholder="20">
                     </div>
                   </div>
                 </div>
@@ -181,12 +193,187 @@
                     <div class="add-item my-2 centy">
                       <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
                       <input type="text" class="form-control text-center input-design-mod" id="inputUser"
-                        aria-describedby="InputHelp" placeholder="25%">
+                        aria-describedby="InputHelp" placeholder="0%">
                     </div>
+                  </div>
+                  <div class="aply-btn centy">
+                    <button type="button" class="btn btn-outline-dark">Aplicar Cambios</button>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- Producto 3 -->
+            <div class="card card-design my-3">
+              <div class="row px-3 pt-3 border-bottom">
+                <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11">
+                  <!-- Nombre del Producto -->
+                  <div class="product-name my-2">
+                    <small>Producto</small>
+                    <h6>Bola Hamsters</i> </h6>
+                  </div>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                  <!-- Boton Eliminar Articulo -->
+                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                </div>
+              </div>
+              <div class="row px-3 pb-3">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                  <!-- Imagen del Producto -->
+                  <div class="img-product mt-3">
+                    <img class="img-fluid shadow" src="/img/img_productos/bola-hammmmmmmm.webp" alt="Just No...">
+                  </div>
+                </div>
+                <!-- Valor del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="$7.990">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <!-- Cantidad Del Producto -->
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="25">
+                    </div>
+                  </div>
+                </div>
+                <!-- Valor Subtotal del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="0%">
+                    </div>
+                  </div>
+                  <div class="aply-btn centy">
+                    <button type="button" class="btn btn-outline-dark">Aplicar Cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="card card-design my-3">
+              <div class="row px-3 pt-3 border-bottom">
+                <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11">
+                  <!-- Nombre del Producto -->
+                  <div class="product-name my-2">
+                    <small>Producto</small>
+                    <h6>Pollo Loco </h6>
+                  </div>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                  <!-- Boton Eliminar Articulo -->
+                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                </div>
+              </div>
+              <div class="row px-3 pb-3">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                  <!-- Imagen del Producto -->
+                  <div class="img-product mt-3">
+                    <img class="img-fluid shadow" src="/img/img_productos/polloperro1.jpg" alt="Just No...">
+                  </div>
+                </div>
+                <!-- Valor del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="$3.500">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <!-- Cantidad Del Producto -->
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="38">
+                    </div>
+                  </div>
+                </div>
+                <!-- Valor Subtotal del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="0%">
+                    </div>
+                  </div>
+                  <div class="aply-btn centy">
+                    <button type="button" class="btn btn-outline-dark">Aplicar Cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="card card-design my-3">
+              <div class="row px-3 pt-3 border-bottom">
+                <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11">
+                  <!-- Nombre del Producto -->
+                  <div class="product-name my-2">
+                    <small>Producto</small>
+                    <h6>Cordel Interactivo para Gato</h6>
+                  </div>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                  <!-- Boton Eliminar Articulo -->
+                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                </div>
+              </div>
+              <div class="row px-3 pb-3">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                  <!-- Imagen del Producto -->
+                  <div class="img-product mt-3">
+                    <img class="img-fluid shadow" src="/img/img_productos/jugueteraro1.jpg" alt="Just No...">
+                  </div>
+                </div>
+                <!-- Valor del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="$9.990">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <!-- Cantidad Del Producto -->
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="6">
+                    </div>
+                  </div>
+                </div>
+                <!-- Valor Subtotal del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="0%">
+                    </div>
+                  </div>
+                  <div class="aply-btn centy">
+                    <button type="button" class="btn btn-outline-dark">Aplicar Cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 6 -->
             <div class="card card-design my-3">
               <div class="row px-3 pt-3 border-bottom">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11">
@@ -236,6 +423,123 @@
                       <input type="text" class="form-control text-center input-design-mod" id="inputUser"
                         aria-describedby="InputHelp" placeholder="25%">
                     </div>
+                  </div>
+                  <div class="aply-btn centy">
+                    <button type="button" class="btn btn-outline-dark">Aplicar Cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="card card-design my-3">
+              <div class="row px-3 pt-3 border-bottom">
+                <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11">
+                  <!-- Nombre del Producto -->
+                  <div class="product-name my-2">
+                    <small>Producto</small>
+                    <h6>Rascador</h6>
+                  </div>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                  <!-- Boton Eliminar Articulo -->
+                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                </div>
+              </div>
+              <div class="row px-3 pb-3">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                  <!-- Imagen del Producto -->
+                  <div class="img-product mt-3">
+                    <img class="img-fluid shadow" src="/img/img_productos/rascadorgato1.jpg" alt="Just No...">
+                  </div>
+                </div>
+                <!-- Valor del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputValue"
+                        aria-describedby="InputHelp" placeholder="$19.990">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <!-- Cantidad Del Producto -->
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="12">
+                    </div>
+                  </div>
+                </div>
+                <!-- Valor Subtotal del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="0%">
+                    </div>
+                  </div>
+                  <div class="aply-btn centy">
+                    <button type="button" class="btn btn-outline-dark">Aplicar Cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="card card-design my-3">
+              <div class="row px-3 pt-3 border-bottom">
+                <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11">
+                  <!-- Nombre del Producto -->
+                  <div class="product-name my-2">
+                    <small>Producto</small>
+                    <h6>Correa perro</i> </h6>
+                  </div>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                  <!-- Boton Eliminar Articulo -->
+                  <button type="button" class="trash-design"><i class="bi bi-trash "></i></button>
+                </div>
+              </div>
+              <div class="row px-3 pb-3">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                  <!-- Imagen del Producto -->
+                  <div class="img-product mt-3">
+                    <img class="img-fluid shadow" src="/img/img_productos/correaperro1.jpg" alt="Just No...">
+                  </div>
+                </div>
+                <!-- Valor del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputValue"
+                        aria-describedby="InputHelp" placeholder="$14.990">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <!-- Cantidad Del Producto -->
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="21">
+                    </div>
+                  </div>
+                </div>
+                <!-- Valor Subtotal del Producto -->
+                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+                  <div class="centy my-4 item-design">
+                    <div class="add-item my-2 centy">
+                      <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
+                      <input type="text" class="form-control text-center input-design-mod" id="inputUser"
+                        aria-describedby="InputHelp" placeholder="0%">
+                    </div>
+                  </div>
+                  <div class="aply-btn centy">
+                    <button type="button" class="btn btn-outline-dark">Aplicar Cambios</button>
                   </div>
                 </div>
               </div>

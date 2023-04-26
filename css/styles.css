@@ -325,6 +325,10 @@ p{
 
 /*--------------------[CuentaCss]--------------------*/
 /* Administrar - Modificar */
+.admin-menu{
+    position: sticky;
+    top: 70px !important;
+}
 .centy {
     display: flex;
     flex-direction: column;
