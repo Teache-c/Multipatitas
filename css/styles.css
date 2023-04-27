@@ -394,7 +394,9 @@ p{
     background-color: transparent;
 
 }
-
+.btn-outline-dark{
+    width: 300px;
+}
 /* ResponsiveMedia */
 /*-------------------*/
 /* NavBar */
