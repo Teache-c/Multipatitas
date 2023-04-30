@@ -88,11 +88,11 @@
 
 /*-----------------------------------------------------------------*/
 /*---------------------------[ Producto ]---------------------------*/
-.color-card-pro {
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.30);
+.fon-card {
+    background: #EBEBEB;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(30px);
-
+    border-radius: 20px;
 }
 
 /* Imagen-producto */
@@ -123,7 +123,6 @@
 }
 
 /* cartas */
-
 .dim-carta {
     padding: 1.5rem;
 }
@@ -134,9 +133,11 @@
     backdrop-filter: blur(30px);
     border-radius: 20px;
 }
-
-
-
+#producto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 2rem;
+}
 
 /*-----------------------------------------------------*/
 /*--------------------[ Contactos ]--------------------*/
