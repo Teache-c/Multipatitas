@@ -47,3 +47,101 @@ $(document).ready(function(){
         }
     }; 
 });
+
+
+$(function(){
+
+    $("#trash-btn1").click(function(){
+        $(".prod1").fadeOut ();
+    });
+    $("#trash-btn2").click(function(){
+        $(".prod2").fadeOut ();
+    });
+    $("#trash-btn3").click(function(){
+        $(".prod3").fadeOut ();
+    });
+    $("#trash-btn4").click(function(){
+        $(".prod4").fadeOut ();
+    });
+    $("#trash-btn5").click(function(){
+        $(".prod5").fadeOut ();
+    });
+    $("#trash-btn6").click(function(){
+        $(".prod6").fadeOut ();
+    });
+    $("#trash-btn7").click(function(){
+        $(".prod7").fadeOut ();
+    });
+    $("#trash-btn8").click(function(){
+        $(".prod8").fadeOut ();
+    });
+});
+
+
+$(function(){
+
+    $(".text1").mouseenter(function (){
+        $("#text1").slideDown();
+    });
+
+    $(".text1").mouseleave(function (){
+        $("#text1").slideUp();
+    });
+
+    $(".text2").mouseenter(function (){
+        $("#text2").slideDown();
+    });
+
+    $(".text2").mouseleave(function (){
+        $("#text2").slideUp();
+    });
+
+    $(".text3").mouseenter(function (){
+        $("#text3").slideDown();
+    });
+
+    $(".text3").mouseleave(function (){
+        $("#text3").slideUp();
+    });
+
+    $(".text4").mouseenter(function (){
+        $("#text4").slideDown();
+    });
+
+    $(".text4").mouseleave(function (){
+        $("#text4").slideUp();
+    });
+    
+    $(".text5").mouseenter(function (){
+        $("#text5").slideDown();
+    });
+
+    $(".text5").mouseleave(function (){
+        $("#text5").slideUp();
+    });
+
+    $(".text6").mouseenter(function (){
+        $("#text6").slideDown();
+    });
+
+    $(".text6").mouseleave(function (){
+        $("#text6").slideUp();
+    });
+
+    $(".text7").mouseenter(function (){
+        $("#text7").slideDown();
+    });
+
+    $(".text7").mouseleave(function (){
+        $("#text7").slideUp();
+    });
+
+    $(".text8").mouseenter(function (){
+        $("#text8").slideDown();
+    });
+
+    $(".text8").mouseleave(function (){
+        $("#text8").slideUp();
+    });
+
+});
