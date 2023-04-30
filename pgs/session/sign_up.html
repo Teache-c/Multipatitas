@@ -16,6 +16,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--HojaCss-->
     <link type="text/css" rel="stylesheet" href="/css/acounts.css">
     <title>SingUp</title>
 </head>
@@ -26,7 +29,7 @@
     <div class="container">
         <!-- Parte izquierda del container-->
         <div class="signUp-left">
-            <img class="imgy" src="/img/bichon-we-now-3202486_1280.jpg" alt="Just No...">
+            <img class="img-fluid" src="/img/bichon-we-now-3202486_1280.jpg" alt="Just No...">
         </div>
         <!-- Parte derecha del container-->
         <div class="signUp-right">
@@ -35,7 +38,7 @@
                 <p>LLena el siguiente formulario para que podamos reconocerte :D</p>
             </div>
             <!--Formulario De inicio de sesión-->
-            <form class="signUp-form">
+            <form method="post" class="signUp-form" id="form">
                 <!--Contenido del formulario-->
                 <div class="signUp-form-content">
                     <div class="form-item">
@@ -44,7 +47,7 @@
                     </div>
                     <div class="form-item">
                         <label for="user">Email</label>
-                        <input type="text" id="Email">
+                        <input type="text" id="email">
                     </div>
                     <div class="form-item">
                         <label for="password">Las llaves(Contraseña)</label>
@@ -58,8 +61,8 @@
                         </div>
                     </div>
                     <div class="signUp-btn">
-                        <a href="/pgs/session/login.html" class="colory-ses"><button type="button"
-                                class="longi">Registrarse</button></a>
+                        <a href="#" class="colory-ses"><button type="submit" class="longi mb-3">Registrarse</button></a>
+                        <p class="warning" id="warning"></p>
                     </div>
                 </div>
                 <div class="signUp-form-footer footy">
@@ -76,16 +79,9 @@
         <p class="text-center text-muted">@TheMalveks © 2023</p>
     </footer>
 
-    <!--BooStrapJs-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <!--Scripts-->
+    <script src="/Js/Query_Mayor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
