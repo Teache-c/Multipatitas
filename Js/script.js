@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', getProduts)
 const products = document.querySelector('#products')
-const cartItems = document.querySelector('#cartItems')
+const modal = new bootstrap.Modal('#modal',{})
 async function getProduts() {
   const url = 'https://fakestoreapi.com/products'
   try {
@@ -28,8 +28,17 @@ function printProducts(productos) {
 } 
 
 async function showProducts(id) {
-  console.log(id)
+  const url = `https://fakestoreapi.com/products/${id}`
+
+  try {
+      const respuesta = await fetch(url)
+      const resultado = await respuesta.json()
+    verProductoDetalle(resultado)
+  } catch (error){
+    console.log(error)
+  }
 }
+
 
 
 
