@@ -196,9 +196,7 @@ body {
     background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
     background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
 }
-.code-cart-design{
-    
-}
+
 
 .cart-title{
     padding-top: 80px;
@@ -287,6 +285,13 @@ p{
     background: transparent;
 }
 
+.aply-btn{
+    width: 100% !important; 
+}
+
+.boton-aplic{
+    width: 50% !important; 
+}
 
 .buy-btn {
     color: #111;

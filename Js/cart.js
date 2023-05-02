@@ -15,8 +15,8 @@ function printProducts(productos) {
       const { title, price, image } = prod;
       cartItems.innerHTML +=
       `<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 p-2 mrgn-cart">
-        <div class="card card-design my-3 prod1">
-            <div class="row px-1 pt-1 ">
+        <div class="card card-design my-3">
+            <div class="row px-1 pt-1">
                 <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11">
                   <!-- Nombre del Producto -->
                   <div class="product-name my-2 border-bottom">
@@ -24,11 +24,9 @@ function printProducts(productos) {
                       <h6>${title}</h6>
                   </div>
                 </div>
-                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 p-3">
                   <!-- Boton Eliminar Articulo -->
-                  <div class="border-bottom btn-mrgn">
-                    <button type="button" class="trash-design" id="trash-btn1" ><i class="bi bi-trash"></i></button>
-                  </div>
+                  <button type="button" class="trash-design" id="trash-btn1"><i class="bi bi-trash "></i></button>
                 </div>
             </div>
             <div class="row px-1 pb-1">
