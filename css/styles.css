@@ -22,11 +22,21 @@
 .mgn-top {
     margin-top: 90px !important;
 }
-
+.mgn-top-cart {
+    margin-top: 60px !important;
+}
+.mgn-top-cart-items {
+    margin-top: 130px !important;
+}
+.mgn-top-cart-buy {
+    margin-top: 8px !important;
+}
 .mgn-top-welcome {
     margin-top: 120px;
 }
-
+.mrgn-cart{
+    margin-top: auto !important;
+}
 .mgn-top-user {
     margin-top: 90px !important;
 }
@@ -186,15 +196,18 @@ body {
     background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3) !important;
     background: linear-gradient(to right, #faaca8, #ddd6f3) !important;
 }
-.mrgn-cart{
-    margin-top: 80px !important;
+.code-cart-design{
+    
 }
+
 .cart-title{
+    padding-top: 80px;
     background-color:white;
-    border-radius: 15px;
 }
 .card-design{
     border-radius: 10px;
+    position: sticky;
+    top: 235px !important;
 }
 .product-name{
     font-size: 13px;
@@ -207,10 +220,7 @@ body {
 .row-design {
     padding: 20px;
     border-radius: 20px;
-    background: #eacda3;
-    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
-    background: linear-gradient(to right, #d6ae7b, #eacda3);
-
+    width: 100%;
 }
 .item-design {
     color: #111;
@@ -248,6 +258,7 @@ body {
     background: linear-gradient(to right, #d6ae7b, #eacda3);
 
 }
+
 /*-------------------- [ Textos ] --------------------*/
 .center-txt {
     margin-top: 40px;
@@ -284,8 +295,12 @@ p{
     text-align: center;
     border-radius: 20px;
     background-color: #ff6961;
+    position: sticky;
+    top: 575px !important;
 }
-
+.btn-mrgn{
+    margin-top: 23px;
+}
 .btns-style {
     cursor: pointer;
     border: none;
@@ -450,7 +465,9 @@ p{
         margin: 0% !important;
         justify-content: center;
     }
-
+    .btn-outline-dark{
+        width: 200px;
+    }
     .nav-item.dropdown {
         background-color: #EBEBEB;
         border-radius: 0px;
@@ -511,4 +528,7 @@ p{
 /*---------------*/
 /*    Pruebas    */
 
+.containerere{
+    padding-inline: 0 px !important;
+}
 /*---------------*/
