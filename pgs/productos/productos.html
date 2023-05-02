@@ -60,96 +60,31 @@
   </div>
 </nav>
 <!----------------------------------------------------------->
-<!-- Contenedor -->
-<div class="container-fluid my-1" data-bs-toggle="modal" data-bs-target="#mi-modal">
-
-  <div class="modal fade" tabindex="-1" id="mi-modal" >
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
-      <div class="modal-content glass ">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <!-- Imagen producto -->
-            <div class="row">
-              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pd-col ">
-                <img src="/img/img_productos/arenagato1.jpg" class=" img-fluid shadow-img" alt="image">
-              </div>
-              <!-- Informacion del producto -->
-              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-                <div class="tam-txt-con tam-con">
-                  <h3 class="text-justify">Caja arena</h3>
-                  <p class="text-justify">DESCRIPCION DEL PRODUCTO: El arenero para gatos que te presentamos es una
-                    solución ideal para mantener a tu gato cómodo y limpio mientras realiza sus necesidades dentro
-                    de la casa. Este arenero está hecho de plástico de alta calidad y cuenta con bordes elevados
-                    para evitar que la arena se esparza fuera de la bandeja.
-                    El arenero para gatos es fácil de limpiar, solo tienes que retirar la tapa y sacar la bandeja
-                    para desechar la arena usada y reemplazarla por arena fresca. Con este arenero para gatos,
-                    tendrás una solución práctica y efectiva para mantener a tu gato limpio y feliz dentro del
-                    hogar.
-                  </p>
-                  <h3 class="text-justify my-5">$14.990</h3>
-                  <!-- Boton para agregar al carrito -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Calificación-->
-          <div class="row my-3 ">
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-              <div>
-                <br>
-                <h5>Calificación</h5>
-              </div>
-              <div>
-                <label for="inputCode" id="labelnom" class="form-label.lab">Nombre:</label>
-                <input type="text" class="form-cart" id="inputCode" aria-describedby="CodeHelp"
-                  placeholder="Escribe tu nombre">
-              </div>
-              <div>
-                <form>
-                  <p class="clasificacion my-3">
-                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                --><label for="radio1">★</label><!--
-                                --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                --><label for="radio2">★</label><!--
-                                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                --><label for="radio3">★</label><!--
-                                --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                --><label for="radio4">★</label><!--
-                                --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                --><label for="radio5">★</label>
-                  </p>
-                </form>
-
-              </div>
-            </div>
-
-            <!-- Añadir comentarios -->
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 my-4">
-              <div> 
-                <h5>Comentarios</h5>
-              </div>
-              <textarea class="estilotextarea" name="" id="" cols="30" rows="10"
-                placeholder="Cuéntanos tu experiencia en Multipatitas"></textarea>
-            </div>
-
-            <!-- Botón enviar -->
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-5 ">
-              <div class="centy2">
-                <button type="button" class="btn btn-outline-dark my-3">Enviar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn  btn-outline-light">agregar al carrito</button>
-          <button type="button" class="btn  btn-outline-danger" data-bs-dismiss="modal">cerrar</button>
-        </div>
+<!-- Modal-->
+<div class="modal fade" tabindex="-1" id="miModal">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl ">
+    <div class="modal-content glass ">
+      <!-- cabezera de pagina modal -->
+      <div class="modal-header">
+        <button class="btn btn-outline-danger" data-bs-dismiss="modal">cerrar</button>
+      </div>
+      <!-- cuerpo de pagina modal -->
+      <div class="modal-body">
+        <!-- Detalle de productos -->
+        
+        
+      </div>
+      <!-- pie de pagina modal -->
+      <div class="modal-footer">
+        <button type="button" class="btn  btn-outline-light">agregar al carrito</button>
       </div>
     </div>
   </div>
+</div>
+
+<!----------------------------------------------------------->
+<!-- Contenedor productos-->
+<div class="container-fluid">
   <!-- Fila 1 -->
   <div class="row">
     <!-- Columna 1 Categorias -->
@@ -171,19 +106,16 @@
       </div>
     </div> <!-- Fin fila producto -->
   </div>
-</div>
-</div>
-<footer class="py-3">
-  <div class="border-bottom pb-1 my-1 mb-3">
-  </div>
-  <p class="text-center text-muted">@TheMalveks © 2023</p>
+  <footer class="py-3">
+    <div class="border-bottom pb-1 my-1 mb-3">
+    </div>
+    <p class="text-center text-muted">@TheMalveks © 2023</p>
+  </footer>
+  <!--BootStrap Js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/Js/script.js"></script>
 
-</footer>
-<!--BootStrap Js-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/Js/script.js"></script>
-
-<!---------------->
-</body>
+  <!---------------->
+  </body>
 
 </html>
