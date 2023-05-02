@@ -61,9 +61,8 @@ function showProduct(resultado){
   </div>
   <div class="container-fluid">
           <div class="row my-3 glass">
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-              <div>
-                <br>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="my-4">
                 <h5>Calificación</h5>
               </div>
               <div>
@@ -73,7 +72,7 @@ function showProduct(resultado){
               </div>
               <div>
                 <form>
-                  <p class="clasificacion my-3">
+                  <p class="clasificacion my-4">
                     <input id="radio1" type="radio" name="estrellas" value="5">
                     <label for="radio1">★</label>
                     <input id="radio2" type="radio" name="estrellas" value="4">
@@ -89,19 +88,14 @@ function showProduct(resultado){
               </div>
             </div>
             <!-- Añadir comentarios -->
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 my-4">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 my-4">
               <div>
                 <h5>Comentarios</h5>
               </div>
               <textarea class="estilotextarea" name="" id="" cols="30" rows="10"
                 placeholder="Cuéntanos tu experiencia en Multipatitas"></textarea>
-            </div>
-
-            <!-- Botón enviar -->
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-5 ">
-              <div class="centy2">
-                <button type="button" class="btn btn-outline-dark my-3">Enviar</button>
-              </div>
+                <div class="centy2">
+                <button type="button" class="btn btn-outline-dark aply-btn ">Aplicar</button>
             </div>
           </div>
         </div>

@@ -145,7 +145,8 @@ label {
     direction: rtl;
     unicode-bidi: bidi-override;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
+    padding-left: 100px;
     margin: 0px !important;
     
 }
@@ -160,7 +161,7 @@ input[type="radio"]:checked~label {
 }
 
 .form-cart {
-    width: 60%;
+    width: 60px;
     border-radius: 6px;
     padding: 5px;
     border: 2px #000;
@@ -199,9 +200,8 @@ input[type="radio"]:checked~label {
 }
 .centy2 {
     float: right;
-    margin-top: 60px;
-    margin-right: 110px
-    ;
+    margin-top: 25px;
+    margin-right: 110px;
 }
 
 /*-----------------------------------------------------*/
