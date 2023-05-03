@@ -303,6 +303,7 @@ body {
     width: 40%;
     border-radius: 8px;
     padding: 10px;
+    border-style: dashed;
 }
 .row-design {
     padding: 20px;
