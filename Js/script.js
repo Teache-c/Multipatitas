@@ -62,27 +62,26 @@ function showProduct(resultado){
   <div class="container-fluid">
           <div class="row my-3 glass">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-              <div class="my-4">
+              <div class="my-3 centy">
                 <h5>Calificación</h5>
               </div>
-              <div>
-                <label for="inputCode" id="labelnom" class="form-label.lab">Nombre:</label>
-                <input type="text" class="form-cart" id="inputCode" aria-describedby="CodeHelp"
+              <div class="centy">
+                <input type="text" class="form-cart"aria-describedby="CodeHelp"
                   placeholder="Escribe tu nombre">
               </div>
               <div>
-                <form>
+                <form class="centy2">
                   <p class="clasificacion my-4">
-                    <input id="radio1" type="radio" name="estrellas" value="5">
-                    <label for="radio1">★</label>
-                    <input id="radio2" type="radio" name="estrellas" value="4">
-                    <label for="radio2">★</label>
-                    <input id="radio3" type="radio" name="estrellas" value="3">
-                    <label for="radio3">★</label>
-                    <input id="radio4" type="radio" name="estrellas" value="2">
-                    <label for="radio4">★</label>
-                    <input id="radio5" type="radio" name="estrellas" value="1">
-                    <label for="radio5">★</label>
+                    <input class="input_stars" id="radio1" type="radio" name="estrellas" value="5">
+                    <label class="stars" for="radio1">★</label>
+                    <input class="input_stars" id="radio2" type="radio" name="estrellas" value="4">
+                    <label class="stars" for="radio2">★</label>
+                    <input class="input_stars" id="radio3" type="radio" name="estrellas" value="3">
+                    <label class="stars" for="radio3">★</label>
+                    <input class="input_stars" id="radio4" type="radio" name="estrellas" value="2">
+                    <label class="stars" for="radio4">★</label>
+                    <input class="input_stars" id="radio5" type="radio" name="estrellas" value="1">
+                    <label class="stars" for="radio5">★</label>
                   </p>
                 </form>
               </div>
@@ -92,9 +91,9 @@ function showProduct(resultado){
               <div>
                 <h5>Comentarios</h5>
               </div>
-              <textarea class="estilotextarea" name="" id="" cols="30" rows="10"
+              <textarea class="estilotextarea" cols="30" rows="10"
                 placeholder="Cuéntanos tu experiencia en Multipatitas"></textarea>
-                <div class="centy2">
+                <div class="centy">
                 <button type="button" class="btn btn-outline-dark aply-btn ">Aplicar</button>
             </div>
           </div>
