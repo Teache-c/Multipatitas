@@ -8,13 +8,13 @@ $(document).ready(function () {
         let enviar = false
         /* Validacion: Cantidad de caracteres */
         if (user.trim().length < 4 || user.trim().length > 12) {
-            msg += "<p class='text-muted'>" + "El nombre debe contener entre 4 y 12 caracteres" + "</p>";
+            msg += "<p class='text-muted'>" + "El Nickname debe contener entre 4 y 12 caracteres" + "</p>";
             enviar = true;
         }
         /* Validacion: Utilizacion de mayuscula */
         var letra = user.charAt(0);
         if (!isMayus(letra)) {
-            msg += "<p class='text-muted'>" + "La primera letra del Nombre De Usuario debe estar en Mayuscula" + "</p>";
+            msg += "<p class='text-muted'>" + "La primera letra del Nickname debe estar en Mayuscula" + "</p>";
             enviar = true;
         }
         /*  Validacion: Email */
@@ -24,7 +24,7 @@ $(document).ready(function () {
         }
         /* Validacion: Contraseña */
         if (llaves.trim().length < 6 || llaves.trim().length > 8) {
-            msg += "<p class='text-muted'>" + "La contraseña debe contener entre 4 y 12 caracteres" + "</p>";
+            msg += "<p class='text-muted'>" + "La contraseña debe contener entre 6 y 8 caracteres" + "</p>";
             enviar = true;
         }
 
