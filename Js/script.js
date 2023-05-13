@@ -70,7 +70,7 @@ function showProduct(resultado){
                   placeholder="Escribe tu nombre">
               </div>
               <div>
-                <form class="centy2">
+                <form class="center-coment id="puntuacion"">
                   <p class="clasificacion my-4">
                     <input class="input_stars" id="radio1" type="radio" name="estrellas" value="5">
                     <label class="stars" for="radio1">★</label>

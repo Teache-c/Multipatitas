@@ -121,7 +121,7 @@
 /*-----------------------------------------------------------------*/
 /*--------------------[ Comentarios y puntuacion ]-----------------*/
 /* CSS Estrellas*/
-#form {
+#puntuacion {
     width: 250px;
     margin: 0 auto;
     height: 50px;
@@ -197,7 +197,7 @@
     border-radius: 30px;
     margin: 10px;
 }
-.centy2 {
+.center-coment {
     display: flex;
     flex-direction: column;
     align-items: center;
