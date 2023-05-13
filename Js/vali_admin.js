@@ -28,4 +28,26 @@ $(document).ready(function(){
             enviar = true;
         }
     });
+    $("#cardrr").submit(function(e){
+        e.preventDefault();
+        var inputValue =$("#inputValue").val();
+        var inputStock =$("#inputStock").val();
+        var inputDiscount =$("#inputDiscount").val();
+    });
+    /*validar valor producto*/
+    if (valProd.trim().length < 1 || valProd.trim().length > 8) {
+        msg += "<p class='text-muted'>" + "Excedes el maximo." + "</p>";
+        enviar = true;
+    }
+    /*validar stock disponible*/
+    if (valProd.trim().length < 1 || valProd.trim().length > 3) {
+        msg += "<p class='text-muted'>" + "Excedes el maximo." + "</p>";
+        enviar = true;
+    }
+    /* validar descuento aplicado */
+    if (valProd.trim().length < 1 || valProd.trim().length > 3) {
+        msg += "<p class='text-muted'>" + "Descuento no valido" + "</p>";
+        enviar = true;
+    }
 });
+
