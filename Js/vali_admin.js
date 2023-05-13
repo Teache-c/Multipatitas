@@ -14,10 +14,18 @@ $(document).ready(function(){
         /* Validacion: Utilizacion de mayuscula */
         var letra = nomProd.charAt(0);
         if (!isMayus(letra)) {
-            msg += "<p class='text-muted'>" + "La primera letra del Nombre Del Producto debe estar en Mayuscula" + "</p>";
+            msg += "<p class='text-muted'>" + "La primera letra del Nombre Del Producto debe estar en Mayuscula." + "</p>";
             enviar = true;
         }
         /* validacion descripcion*/
-        
+        if (descProd.trim().length < 4 || descProd.trim().length > 50) {
+            msg += "<p class='text-muted'>" + "El nombre debe contener entre 4 y 50 caracteres." + "</p>";
+            enviar = true;
+        }
+        /*validacion valor producto*/
+        if (valProd.trim().length < 1 || valProd.trim().length > 8) {
+            msg += "<p class='text-muted'>" + "Excedes el maximo." + "</p>";
+            enviar = true;
+        }
     });
 });
