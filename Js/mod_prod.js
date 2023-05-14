@@ -15,7 +15,7 @@ function printProducts(productos) {
     const { title, price, image } = prod;
     modProds.innerHTML +=
       `<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-        <div class="card card-design my-3" id="cardrr">
+        <div class="card card-design my-3" id="cardModProd">
                 <div class="row px-3 pt-3 border-bottom">
                   <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11">
                     <!-- Nombre del Producto -->
@@ -41,7 +41,7 @@ function printProducts(productos) {
                     <div class="centy my-4 item-design">
                       <div class="add-item my-2 centy">
                         <label for="inputUser" class="form-label"><small>Valor Del producto</small></label>
-                        <input type="number" class="form-control text-center input-design-mod" id="inputValue"
+                        <input type="number" min="0" class="form-control text-center input-design-mod" id="inputValue"
                           aria-describedby="InputHelp" placeholder="${price}">
                       </div>
                     </div>
@@ -51,17 +51,18 @@ function printProducts(productos) {
                     <div class="centy my-4 item-design">
                       <div class="add-item my-2 centy">
                         <label for="inputUser" class="form-label"><small>Stock Disponible</small></label>
-                        <input type="number" class="form-control text-center input-design-mod" id="inputStock"
+                        <input type="number" min="0" class="form-control text-center input-design-mod" id="inputStock"
                           aria-describedby="InputHelp" placeholder="11">
                       </div>
                     </div>
+                    
                   </div>
                   <!-- Valor Subtotal del Producto -->
                   <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
                     <div class="centy my-4 item-design">
                       <div class="add-item my-2 centy">
                         <label for="inputUser" class="form-label"><small>Descuento Aplicado</small></label>
-                        <input type="number" class="form-control text-center input-design-mod" id="inputDiscount"
+                        <input type="number" min="0" class="form-control text-center input-design-mod" id="inputDiscount"
                           aria-describedby="InputHelp" placeholder="0%">
                       </div>
                     </div>
