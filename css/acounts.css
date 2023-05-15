@@ -110,7 +110,8 @@ body {
 input[type='text'],
 input[type='password'],
 input[type='number'],
-input[type='date'] {
+input[type='date'],
+input[type='email'] {
     border: 1px solid black;
     height: 55px;
     padding: 0 2rem;

@@ -137,11 +137,6 @@
     height: 50px;
 
 }
-
-#form label {
-    font-size: 100px;
-}
-
 .input_stars[type="radio"] {
     display: none;
 }
