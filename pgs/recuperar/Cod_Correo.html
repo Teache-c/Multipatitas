@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <!-- BoosTrapCss-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/css/cod_correo.css">
     <meta charset="UTF-8">
     <title>Restablecer contraseña</title>
@@ -19,21 +22,17 @@
 <body>
 
     <!-- formulario -->
-    <form action="">
-        <div class="form-items">
-
-        </div>
-    </form>
-    <div class="form glass">
+    <form class="form glass" id="formCorreo">
         <h1>RESTABLEZCA SU CONTRASEÑA</h1>
         <h3>SE LE ENVIARA MAS INTRUCCIONES A SU CORREO ELECTRONICO PARA RECUPERAR SU CONTRASEÑA</h3>
         <p>
             <label for="nombre" class="colocar_nombre">Ingrese correo electronico
                 <span class="obligatorio">*</span>
             </label>
-            <input type="text" placeholder="Ingrese su correo">
+            <input type="text" placeholder="Ingrese su correo" id="email">
 
-            <button type="button" class="btn btn-outline-dark centy">Enviar</button>
+            <button type="submit" class="btn btn-outline-dark centy">Enviar</button>
+            <p class="warning my-3" id="warning"></p>
         <p>
             <span> * </span>los campos son obligatorios.
         </p>
@@ -43,9 +42,9 @@
             <p class="text-center text-muted">@TheMalveks © 2023</p>
         </footer>
 
-    </div>
+    </form>
 
-
+    <script src="/Js/vali_correo_mod.js"></script>
 </body>
 
 </html>
