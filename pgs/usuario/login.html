@@ -29,7 +29,7 @@
                 <p>Te extrañábamos, ya era hora de volver a casa :D</p>
             </div>
             <!--Formulario De inicio de sesión-->
-            <form class="login-form" id="form">
+            <form class="login-form" id="formLogin">
                 <!--Contenido del formulario-->
                 <div class="login-form-content">
                     <div class="form-item">
@@ -41,15 +41,16 @@
                         <input type="password" id="password">
                     </div>
                     <div class="form-item">
+                        <p class="warning" id="warning"></p>
                         <div class="checkbox">
                             <input type="checkbox" id="RememberMe">
                             <label for="RememberMe" class="checkbox_label"> Recuerdame... </label>
                         </div>
                     </div>
                     <div class="login-btn">
-                        <a href="/pgs/usuario/cuenta.html" class="colory-ses"><button type="button" class="longi">
-                                Iniciar
-                                Sesión</button></a>
+                        <a href="/pgs/usuario/cuenta.html" class="colory-ses">
+                            <button type="button" class="longi">Iniciar Sesión</button>
+                        </a>
                     </div>
                 </div>
                 <div class="login-form-footer footy">
@@ -73,6 +74,7 @@
         <p class="text-center text-muted">@TheMalveks © 2023</p>
     </footer>
     <!--Scripts-->
+    <script src="/Js/user_validate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!---------------->
 </body>

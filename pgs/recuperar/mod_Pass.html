@@ -14,36 +14,37 @@
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!--HojaCss-->
-    <link type="text/css" rel="stylesheet" href="/css/cod_correo.css">
-    <title>Recuperar contraseña</title>
+    <link type="text/css" rel="stylesheet" href="/css/recover.css">
+    <title>Restablecer contraseña</title>
 </head>
 
 <body>
-    <div class="form glass">
+    <form class="form glass" id="formPassword">
         <h2 class="mx-1">Modificar Contraseña</h2>
         <h3 class="text-muted">En los siguientes campos podrá ingresar su nueva contraseña.<br> Recuerde rellenar cada campo, tambien la contraseña debe tener un minimo de 6 caracteres y un maximo de 12.</h3>
         <p>
-            <label for="nombre" class="colocar_nombre">Ingrese su nueva contraseña
+            <label for="password">Ingrese su nueva contraseña
                 <span class="obligatorio">*</span>
             </label>
-            <input type="text" placeholder="Ingrese su nueva contraseña">
+            <input type="password" id="password" placeholder="Ingrese su nueva contraseña">
 
-            <label for="nombre" class="colocar_nombre">Repita su nueva contraseña
+            <label for="password">Repita su nueva contraseña
                 <span class="obligatorio">*</span>
             </label>
-            <input type="text" placeholder="Repita su nueva contraseña">
-            <button type="button" class="btn btn-outline-dark centy">APLICAR</button>
+            <input type="password" id="repeatPassword" placeholder="Repita su nueva contraseña">
 
-        <p><span> * </span>los campos son obligatorios.</p>
+            <p class="warning" id="warning"></p>
+            <button type="submit" class="btn btn-outline-dark centy">APLICAR</button>
         <footer class="py-3">
             <div class="border-bottom pb-1 my-1 mb-3">
             </div>
             <p class="text-center text-muted">@TheMalveks © 2023</p>
         </footer>
-    </div>
+    </form>
     
     <!--BootStrap Js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Js/user_validate.js"></script>
     <!---------------->
 </body>
 

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    /* Validaciones para formulario de agregar producto */
     $("#formAgreProd").submit(function(e) {
         e.preventDefault();
         var nomProd = $("#nomProd").val();
@@ -39,6 +40,8 @@ $(document).ready(function(){
         }
 
     });
+    
+    /* Validaciones para formulario de modificar productos */
 
     function isMayus(letra) {
         console.log("letra inicial:", letra);
@@ -52,37 +55,7 @@ $(document).ready(function(){
         }
     };
 
-    $("#cardModProd").submit(function(e){
-        e.preventDefault();
-        var inputValue =$("#inputValue").val();
-        var inputStock =$("#inputStock").val();
-        var inputDiscount =$("#inputDiscount").val();
 
-        var msj ="";
-        let enviar = false;
-
-        /*validar valor producto*/
-        if (valProd.trim().length < 1 || valProd.trim().length > 8) {
-            msj += "<p class='text-muted'>" + "Excedes el maximo." + "</p>";
-            enviar = true;
-        }
-        /*validar stock disponible*/
-        if (valProd.trim().length < 1 || valProd.trim().length > 3) {
-            msj += "<p class='text-muted'>" + "Excedes el maximo." + "</p>";
-            enviar = true;
-        }
-        /* validar descuento aplicado */
-        if (valProd.trim().length < 1 || valProd.trim().length > 3) {
-            msj += "<p class='text-muted'>" + "Descuento no valido" + "</p>";
-            enviar = true;
-        }
-        if (enviar) {
-            $("#warning").html(msj);
-        }
-        else {
-            $("#warning").html("Producto Modificado");
-        }
-    });
     
 });
 
