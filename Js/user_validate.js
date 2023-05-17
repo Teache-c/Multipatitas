@@ -4,11 +4,29 @@ $(document).ready(function () {
     e.preventDefault();
     var user = $("#user-name").val();
     var correo = $("#email").val();
+
     var llaves = $("#password").val();
     var special = new RegExp("^(?=.*[!@#$&*])");
     var repeatPass = $("#repeatPassword").val();
+
+    var phoneNum = $("#phone-number").val();
+
+    var bornDate = $('#born-date').val();
+    var hoy = new Date();
+    var bornDate = new Date(bornDate);
+
+    var edad = hoy.getFullYear() - bornDate.getFullYear();
+    var mes = hoy.getMonth() - bornDate.getMonth();
+    var dia = hoy.getDate() - bornDate.getDate();
+    
     var msg = "";
     let enviar = false
+    
+    /* Validacion:Numero de telefono valido */
+    if(phoneNum.trim().length != 12 || phoneNum.indexOf('+569', 0) == -1){
+      msg += "<p class='text-muted'>" + "Debe ingresar un número valido,debe tener el indicador +569 seguido de 8 digitos" + "</p>";
+      enviar = true;
+    }
     /* Validacion: Cantidad de caracteres */
     if (user.trim().length < 4 || user.trim().length > 12) {
       msg += "<p class='text-muted'>" + "El Nickname debe contener entre 4 y 12 caracteres" + "</p>";
@@ -45,6 +63,21 @@ $(document).ready(function () {
       msg += "<p class='text-muted'>" + "La contraseñas deben coincidir" + "</p>";
       enviar = true;
     }
+    /* Validacion:Numero de telefono valido */
+    if(phoneNum.trim().length != 12 || phoneNum.indexOf('+569', 0) == -1){
+      msg += "<p class='text-muted'>" + "Debe ingresar un número valido, debe tener el indicador +569 seguido de 8 digitos" + "</p>";
+      enviar = true;
+    }
+    /* Validación: mayoria de edad */
+    if (mes < 0 || (mes === 0 && dia < 0)) {
+      edad--;
+    }
+
+    if (edad < 18) {
+      e.preventDefault();
+      msg += "<p class='text-muted'>" + "Debes ser mayor de edad para registrarte." + "</p>";
+      enviar = true;
+    }
     /* Evaluacion de bandera para enviar el formulario */
     if (enviar) {
       $("#warning").html(msg);
@@ -59,10 +92,10 @@ $(document).ready(function () {
     e.preventDefault();
     var user = $("#user-name").val();
     var mail = $("#email").val(); 
+
     var adress = $("#adress").val();
-    var phoneReg = new RegExp("^(?=.*[+])"); 
     var phoneNum = $("#number").val();
-    var bDate = $("#date").val();
+
     var msg = "";
     let enviar = false;
     /* Validacion: Cantidad de caracteres(NickName) */
@@ -86,10 +119,12 @@ $(document).ready(function () {
       msg += "<p class='text-muted'>" + "Su dirección no puede quedar vacia" + "</p>";
       enviar = true;
     }
-    if(!phoneReg.test(phoneNum) || phoneNum.trim().length != 12 || phoneNum.indexOf('+569', 0) == -1){
-      msg += "<p class='text-muted'>" + "Debe ingresar un número valido,debe tener el indicador +569 seguido de 8 digitos" + "</p>";
+    /* Validacion:Numero de telefono valido */
+    if(phoneNum.trim().length != 12 || phoneNum.indexOf('+569', 0) == -1){
+      msg += "<p class='text-muted'>" + "Debe ingresar un número valido, debe tener el indicador +569 seguido de 8 digitos" + "</p>";
       enviar = true;
     }
+    /* Evaluacion de bandera para enviar el formulario */ 
     if (enviar) {
       $("#warning").html(msg);
     }
